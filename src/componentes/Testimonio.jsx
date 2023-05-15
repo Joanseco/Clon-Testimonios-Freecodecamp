@@ -1,7 +1,10 @@
 import React from "react";
+
+//importo los estilos creados en la ruta 
 import "../hojas-de-estilos/Testimonio.css";
 
-function Testimonio(props){ //Otra forma de exportar es: export function
+//Creo el Componente de Testimonio y añado los props a las partes que quiero cambiar
+function Testimonio(props){
     return(
         <div className="contenedor-testimonio">
             <img className="imagen-testimonio" src={require(`../imagenes/${props.imagen}-testimonio.png`)}alt="Foto-Emma" />

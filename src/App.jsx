@@ -1,7 +1,12 @@
+//importo los estilos de la ruta señalada
 import './App.css';
-import Testimonio from "./componentes/Testimonio"; //y con la otra forma se importa: import {Testimonio} from ...
 
+//Importo en componente Testimonio ubicado en la ruta que ahi señala
+import Testimonio from "./componentes/Testimonio"; //la otra forma se importa: import {Testimonio} from ...
+
+//creo la funcion que contiene el contenedor principal mostrar, aqui pasare los props de los componentes creados
 function App() {
+  //al crear la funcion retorno los elementos JSX con los props que quiero pasarle informacion
   return (
     <div className="App">
       <div className="contenedor-principal">
@@ -36,4 +41,5 @@ function App() {
   );
 }
 
+//y exporto la funcion App, para usarla en el index ejs
 export default App;
